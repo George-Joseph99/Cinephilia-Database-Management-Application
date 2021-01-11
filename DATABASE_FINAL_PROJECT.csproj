@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC8232D5-B804-4766-8840-C88C50EAD01E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBapplication</RootNamespace>
+    <AssemblyName>DBapplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net40\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net40\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net40\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddMovie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\deleteUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\deleteUser.Designer.cs">
+      <DependentUpon>deleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\managerialsta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\managerialsta.Designer.cs">
+      <DependentUpon>managerialsta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\reportadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\reportadmin.Designer.cs">
+      <DependentUpon>reportadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\searchadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\searchadmin.Designer.cs">
+      <DependentUpon>searchadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\adddirector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\adddirector.Designer.cs">
+      <DependentUpon>adddirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\comparedirector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\comparedirector.Designer.cs">
+      <DependentUpon>comparedirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\directorreport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\directorreport.Designer.cs">
+      <DependentUpon>directorreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\directorsearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\directorsearch.Designer.cs">
+      <DependentUpon>directorsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch1.Designer.cs">
+      <DependentUpon>dirsearch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch2.Designer.cs">
+      <DependentUpon>dirsearch2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch3.Designer.cs">
+      <DependentUpon>dirsearch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\dirsearch4.Designer.cs">
+      <DependentUpon>dirsearch4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\homedirector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\homedirector.Designer.cs">
+      <DependentUpon>homedirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\mymoviesdirector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\mymoviesdirector.Designer.cs">
+      <DependentUpon>mymoviesdirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director_FilmMakers\stadirector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\stadirector.Designer.cs">
+      <DependentUpon>stadirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\Compare_Stars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\Compare_Stars.Designer.cs">
+      <DependentUpon>Compare_Stars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\reportStar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\reportStar.Designer.cs">
+      <DependentUpon>reportStar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch.Designer.cs">
+      <DependentUpon>starsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch1.Designer.cs">
+      <DependentUpon>starsearch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch2.Designer.cs">
+      <DependentUpon>starsearch2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch3.Designer.cs">
+      <DependentUpon>starsearch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\starsearch4.Designer.cs">
+      <DependentUpon>starsearch4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\stastars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\stastars.Designer.cs">
+      <DependentUpon>stastars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\ACTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\ACTOR.Designer.cs">
+      <DependentUpon>ACTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extra\AddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\AddProject.Designer.cs">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\AddStar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\AddStar.Designer.cs">
+      <DependentUpon>AddStar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\Home_star.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\Home_star.Designer.cs">
+      <DependentUpon>Home_star.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Movie_stars\Mymoviesstar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Movie_stars\Mymoviesstar.Designer.cs">
+      <DependentUpon>Mymoviesstar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\AddPublic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\AddPublic.Designer.cs">
+      <DependentUpon>AddPublic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extra\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\Compare_public.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\Compare_public.Designer.cs">
+      <DependentUpon>Compare_public.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Director_FilmMakers\Director.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director_FilmMakers\Director.Designer.cs">
+      <DependentUpon>Director.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\Home_public.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\Home_public.Designer.cs">
+      <DependentUpon>Home_public.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MAIN_ADMINS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\MAIN_ADMINS.Designer.cs">
+      <DependentUpon>MAIN_ADMINS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="extra\Provided Functionalities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\Provided Functionalities.Designer.cs">
+      <DependentUpon>Provided Functionalities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\ReportsPublic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\ReportsPublic.Designer.cs">
+      <DependentUpon>ReportsPublic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extra\RetrieveProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\RetrieveProjects.Designer.cs">
+      <DependentUpon>RetrieveProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\search1public.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\search1public.Designer.cs">
+      <DependentUpon>search1public.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\search2public.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\search2public.Designer.cs">
+      <DependentUpon>search2public.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\search3public.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\search3public.Designer.cs">
+      <DependentUpon>search3public.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\search4public.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\search4public.Designer.cs">
+      <DependentUpon>search4public.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\SearchPublic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\SearchPublic.Designer.cs">
+      <DependentUpon>SearchPublic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome_SignIN_UP\SIGNin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_SignIN_UP\SIGNin.Designer.cs">
+      <DependentUpon>SIGNin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome_SignIN_UP\SIGNupp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_SignIN_UP\SIGNupp.Designer.cs">
+      <DependentUpon>SIGNupp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\StatisticsPublic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\StatisticsPublic.Designer.cs">
+      <DependentUpon>StatisticsPublic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The_Public_User\THEPUBLIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The_Public_User\THEPUBLIC.Designer.cs">
+      <DependentUpon>THEPUBLIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationClass.cs" />
+    <Compile Include="extra\ViewEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\ViewEmployees.Designer.cs">
+      <DependentUpon>ViewEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extra\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome_SignIN_UP\WELCOME_TO_CINEPHILIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_SignIN_UP\WELCOME_TO_CINEPHILIA.Designer.cs">
+      <DependentUpon>WELCOME_TO_CINEPHILIA.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\deleteUser.resx">
+      <DependentUpon>deleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\managerialsta.resx">
+      <DependentUpon>managerialsta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\reportadmin.resx">
+      <DependentUpon>reportadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\searchadmin.resx">
+      <DependentUpon>searchadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\adddirector.resx">
+      <DependentUpon>adddirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\comparedirector.resx">
+      <DependentUpon>comparedirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\directorreport.resx">
+      <DependentUpon>directorreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\directorsearch.resx">
+      <DependentUpon>directorsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\dirsearch1.resx">
+      <DependentUpon>dirsearch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\dirsearch2.resx">
+      <DependentUpon>dirsearch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\dirsearch3.resx">
+      <DependentUpon>dirsearch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\dirsearch4.resx">
+      <DependentUpon>dirsearch4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\homedirector.resx">
+      <DependentUpon>homedirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\mymoviesdirector.resx">
+      <DependentUpon>mymoviesdirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\stadirector.resx">
+      <DependentUpon>stadirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\Compare_Stars.resx">
+      <DependentUpon>Compare_Stars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\reportStar.resx">
+      <DependentUpon>reportStar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\starsearch.resx">
+      <DependentUpon>starsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\starsearch1.resx">
+      <DependentUpon>starsearch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\starsearch2.resx">
+      <DependentUpon>starsearch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\starsearch3.resx">
+      <DependentUpon>starsearch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\starsearch4.resx">
+      <DependentUpon>starsearch4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\stastars.resx">
+      <DependentUpon>stastars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\ACTOR.resx">
+      <DependentUpon>ACTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\AddProject.resx">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\AddStar.resx">
+      <DependentUpon>AddStar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\Home_star.resx">
+      <DependentUpon>Home_star.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Movie_stars\Mymoviesstar.resx">
+      <DependentUpon>Mymoviesstar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\AddPublic.resx">
+      <DependentUpon>AddPublic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\Compare_public.resx">
+      <DependentUpon>Compare_public.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director_FilmMakers\Director.resx">
+      <DependentUpon>Director.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\Home_public.resx">
+      <DependentUpon>Home_public.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\MAIN_ADMINS.resx">
+      <DependentUpon>MAIN_ADMINS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="extra\Provided Functionalities.resx">
+      <DependentUpon>Provided Functionalities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\ReportsPublic.resx">
+      <DependentUpon>ReportsPublic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\RetrieveProjects.resx">
+      <DependentUpon>RetrieveProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\search1public.resx">
+      <DependentUpon>search1public.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\search2public.resx">
+      <DependentUpon>search2public.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\search3public.resx">
+      <DependentUpon>search3public.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\search4public.resx">
+      <DependentUpon>search4public.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\SearchPublic.resx">
+      <DependentUpon>SearchPublic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_SignIN_UP\SIGNin.resx">
+      <DependentUpon>SIGNin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_SignIN_UP\SIGNupp.resx">
+      <DependentUpon>SIGNupp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\StatisticsPublic.resx">
+      <DependentUpon>StatisticsPublic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The_Public_User\THEPUBLIC.resx">
+      <DependentUpon>THEPUBLIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\ViewEmployees.resx">
+      <DependentUpon>ViewEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_SignIN_UP\WELCOME_TO_CINEPHILIA.resx">
+      <DependentUpon>WELCOME_TO_CINEPHILIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall_1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2823%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoneeded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\director.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actoractress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="World.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-13-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compare-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-work_12-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-3-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-8-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-7-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-410-461751.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2824%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hot-icon-png-26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2825%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1F37F-popcorn-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button-icon-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\competition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\director-chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popcorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24-hours.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60-minutes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reviews.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
