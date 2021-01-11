@@ -1,4 +1,4 @@
 # Cinephilia-Database-Management-Application
 
 
-A Desktop database management application that ha three users(stars,directors,public) that are manages by an Admin with a wide range of functionalities for each user
+A Desktop database management application that has three users(stars,directors,public) that are managed by an Admin with a wide range of functionalities for each user
