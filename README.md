@@ -22,11 +22,11 @@ A Desktop database management application that has three users(stars,directors,p
 
 
 ![ss4](https://user-images.githubusercontent.com/62334815/104252152-fe59b500-5479-11eb-9f46-cca338413c84.JPG)
-<h5>---------------------------------------------------------------------------------------------------------</h5>
+---
 <h3>The Movie Star<h3>
   
 ![ss5](https://user-images.githubusercontent.com/62334815/104252166-03b6ff80-547a-11eb-9850-008e937bcb33.JPG)
-<h5>----------------------------------------------------------------------------------------------------------</h5>
+---
 <h3>the movie director<h3>
   
 ![ss6](https://user-images.githubusercontent.com/62334815/104252180-087bb380-547a-11eb-917d-accd821ae90a.JPG)
